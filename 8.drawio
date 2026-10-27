@@ -1,0 +1,104 @@
+<mxfile host="app.diagrams.net" pages="2">
+  <diagram name="ДЗ — алгоритм main" id="08jOOQWUkBJj067JzjP6">
+    <mxGraphModel dx="1241" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="m-start" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" value="Начало main()" vertex="1">
+          <mxGeometry height="55" width="190" x="115" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="m-input" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;" value="Вывести приглашение;&#xa;ввести целое число N" vertex="1">
+          <mxGeometry height="75" width="270" x="75" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="m-check" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="Ввод корректен&#xa;и N ≥ 0?" vertex="1">
+          <mxGeometry height="105" width="210" x="105" y="235" as="geometry" />
+        </mxCell>
+        <mxCell id="m-call" parent="1" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" value="Вызвать функцию:&#xa;&lt;b&gt;result = TaskDZ(N)&lt;/b&gt;" vertex="1">
+          <mxGeometry height="80" width="310" x="55" y="405" as="geometry" />
+        </mxCell>
+        <mxCell id="m-output" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;" value="Вывести результат:&#xa;&lt;b&gt;result&lt;/b&gt;" vertex="1">
+          <mxGeometry height="65" width="270" x="75" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="m-error" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;" value="Вывести сообщение&#xa;об ошибке ввода" vertex="1">
+          <mxGeometry height="70" width="250" x="430" y="255" as="geometry" />
+        </mxCell>
+        <mxCell id="m-end" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" value="Конец main()" vertex="1">
+          <mxGeometry height="55" width="190" x="115" y="665" as="geometry" />
+        </mxCell>
+        <mxCell id="m-error-end" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" value="Конец main()" vertex="1">
+          <mxGeometry height="55" width="190" x="460" y="405" as="geometry" />
+        </mxCell>
+        <mxCell id="me1" edge="1" parent="1" source="m-start" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="m-input">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="me2" edge="1" parent="1" source="m-input" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="m-check">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="me3" edge="1" parent="1" source="m-check" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="m-call" value="Да">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="me4" edge="1" parent="1" source="m-check" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="m-error" value="Нет">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="me5" edge="1" parent="1" source="m-call" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="m-output">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="me6" edge="1" parent="1" source="m-output" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="m-end">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="me7" edge="1" parent="1" source="m-error" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="m-error-end">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="ДЗ — функция TaskDZ" id="-vA-1-hS2t231_ihS3fX">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="f-start" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" value="Начало функции&#xa;&lt;b&gt;TaskDZ(N)&lt;/b&gt;" vertex="1">
+          <mxGeometry height="65" width="250" x="720" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="f-init" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="sum = 0&#xa;i = N" vertex="1">
+          <mxGeometry height="70" width="230" x="730" y="145" as="geometry" />
+        </mxCell>
+        <mxCell id="f-condition" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="i ≤ 2 × N?" vertex="1">
+          <mxGeometry height="105" width="200" x="745" y="265" as="geometry" />
+        </mxCell>
+        <mxCell id="f-calc" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="sum = sum + (long long)i × i" vertex="1">
+          <mxGeometry height="70" width="290" x="700" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="f-increment" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="i = i + 1" vertex="1">
+          <mxGeometry height="60" width="200" x="745" y="545" as="geometry" />
+        </mxCell>
+        <mxCell id="f-return" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" value="Вернуть sum&#xa;в место вызова функции" vertex="1">
+          <mxGeometry height="75" width="260" x="1110" y="285" as="geometry" />
+        </mxCell>
+        <mxCell id="fe1" edge="1" parent="1" source="f-start" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="f-init">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fe2" edge="1" parent="1" source="f-init" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="f-condition">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fe-yes" edge="1" parent="1" source="f-condition" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="f-calc" value="Да">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fe3" edge="1" parent="1" source="f-calc" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="f-increment">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fe-loop" edge="1" parent="1" source="f-increment" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;exitX=0;exitY=0.5;entryX=0;entryY=0.5;" target="f-condition" value="Повторить цикл">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="640" y="575" />
+              <mxPoint x="640" y="317" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fe-no" edge="1" parent="1" source="f-condition" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="f-return" value="Нет">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
